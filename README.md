@@ -1,5 +1,23 @@
 # Machine Learning Classification of Body Part, Imaging Axis, and Intravenous Contrast Enhancement on CT Imaging
 
+### Published abstract as it appears in the Canadian Association of Radiologists Journal
+
+Purpose: The development and evaluation of machine learning models that automatically identify the body part(s) imaged, axis
+of imaging, and the presence of intravenous contrast material of a CT series of images. Methods: This retrospective study
+included 6955 series from 1198 studies (501 female, 697 males, mean age 56.5 years) obtained between January 2010 and
+September 2021. Each series was annotated by a trained board-certified radiologist with labels consisting of 16 body parts,
+3 imaging axes, and whether an intravenous contrast agent was used. The studies were randomly assigned to the training,
+validation and testing sets with a proportion of 70%, 20% and 10%, respectively, to develop a 3D deep neural network for each
+classification task. External validation was conducted with a total of 35,272 series from 7 publicly available datasets. The
+classification accuracy for each series was independently assessed for each task to evaluate model performance. Results: The
+accuracies for identifying the body parts, imaging axes, and the presence of intravenous contrast were 96.0% (95% CI: 94.6%,
+97.2%), 99.2% (95% CI: 98.5%, 99.7%), and 97.5% (95% CI: 96.4%, 98.5%) respectively. The generalizability of the models was
+demonstrated through external validation with accuracies of 89.7 - 97.8%, 98.6 - 100%, and 87.8 - 98.6% for the same tasks.
+Conclusions: The developed models demonstrated high performance on both internal and external testing in identifying key
+aspects of a CT series.
+
+### Repository contains
+
 This repository contains early demo snippets of the TensorFlow-based code and information related to our research paper on using machine learning for automated classification of CT series. The code may be used for visualizing anonymized public health DICOM data and exploring the initial training viability of our CT classification methods using open public anonymized data. 
 
 Due to potential legal and licensing complexities, the final ResNet PyTorch implementation is not included in this public release.
