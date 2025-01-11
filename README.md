@@ -1,20 +1,16 @@
 # Machine Learning Classification of Body Part, Imaging Axis, and Intravenous Contrast Enhancement on CT Imaging
 
-### Published abstract as it appears in the Canadian Association of Radiologists Journal
+### Overview of the abstract as it appears in the Canadian Association of Radiologists Journal
 
-Purpose: The development and evaluation of machine learning models that automatically identify the body part(s) imaged, axis
-of imaging, and the presence of intravenous contrast material of a CT series of images. Methods: This retrospective study
-included 6955 series from 1198 studies (501 female, 697 males, mean age 56.5 years) obtained between January 2010 and
-September 2021. Each series was annotated by a trained board-certified radiologist with labels consisting of 16 body parts,
-3 imaging axes, and whether an intravenous contrast agent was used. The studies were randomly assigned to the training,
-validation and testing sets with a proportion of 70%, 20% and 10%, respectively, to develop a 3D deep neural network for each
-classification task. External validation was conducted with a total of 35,272 series from 7 publicly available datasets. The
-classification accuracy for each series was independently assessed for each task to evaluate model performance. Results: The
-accuracies for identifying the body parts, imaging axes, and the presence of intravenous contrast were 96.0% (95% CI: 94.6%,
-97.2%), 99.2% (95% CI: 98.5%, 99.7%), and 97.5% (95% CI: 96.4%, 98.5%) respectively. The generalizability of the models was
-demonstrated through external validation with accuracies of 89.7 - 97.8%, 98.6 - 100%, and 87.8 - 98.6% for the same tasks.
-Conclusions: The developed models demonstrated high performance on both internal and external testing in identifying key
-aspects of a CT series.
+Developed and validated a suite of deep learning models using PyTorch for automated analysis of CT imaging data. This project, published in the Canadian Association of Radiologists Journal (CARJ) and the Radiological Society of North America (RSNA) Journal, focused on classifying three crucial aspects of CT series:
+
+Body Part Identification: Accurately identified 16 different body parts with 96.0% accuracy (95% CI: 94.6%, 97.2%).
+
+Imaging Axis Determination: Determined the axis of imaging with 99.2% accuracy (95% CI: 98.5%, 99.7%).
+
+Intravenous Contrast Detection: Identified the presence of intravenous contrast with 97.5% accuracy (95% CI: 96.4%, 98.5%).
+
+The models were trained on a dataset of 6955 CT series, rigorously validated internally, and further validated externally on a dataset of 35,272 series from 7 public datasets, demonstrating strong generalizability (accuracies ranging from 87.8% to 100%). This project showcases proficiency in applying advanced AI techniques to solve real-world challenges in medical image analysis.
 
 ### Repository contains
 
