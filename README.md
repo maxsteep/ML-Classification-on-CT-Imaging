@@ -29,6 +29,10 @@ In addition, a selection of metrics from the original research is also presented
 
 **Conclusion:** Our developed models demonstrate robust performance in automatically identifying key aspects of CT series, which can significantly improve dataset curation workflows and potentially enhance clinical applications.
 
+## Chosen Preliminary Research Excerpts (Produced on anonymized open public data)
+
+
+
 ## Why We Switched from TensorFlow to PyTorch
 
 We initially started our project using TensorFlow but transitioned to PyTorch for several key reasons:
