@@ -2,9 +2,11 @@
 
 This repository contains early demo snippets of the TensorFlow-based code and information related to our research paper on using machine learning for automated classification of CT series. The code may be used for visualizing anonymized public health DICOM data and exploring the initial training viability of our CT classification methods using open public anonymized data. 
 
-Due to potential legal and licensing complexities, the final PyTorch implementation is not included in this public release.
+Due to potential legal and licensing complexities, the final ResNet PyTorch implementation is not included in this public release.
 
 The published PDF of this paper, as it appears in the Canadian Association of Radiologists' Journal (CARJ), is included in this repository for reference purposes.
+
+In addition, a selection of metrics from the original research is also presented in the readme.md.
 
 ## Overview
 
@@ -38,6 +40,8 @@ We initially started our project using TensorFlow but transitioned to PyTorch fo
 
 While TensorFlow is a powerful framework, PyTorch's strengths in flexibility, debugging, and its strong research community made it a better fit for our project's goals and development style.
 
+
+
 ## Attribution Statement
 
-This LaTeX document is a formal larger write-up of research primarily undertaken by Max Stepanov and Alexis Murari while affiliated with Unity Health and the University of Toronto's Computer Engineering department.
+This LaTeX document is a formal larger write-up of research originally undertaken by Max Stepanov and Alexis Murari while affiliated with Unity Health and the University of Toronto's Computer Engineering department.
