@@ -34,30 +34,36 @@ In addition, a selection of metrics from the original research is also presented
 Please note that the published manuscript uses proprietary closed patient data and as such the code is not pubilished - the effectiveness demonstrated is vastly superior to the demo project that uses anonymized public open health data. This is a repository for the initial stages of the research that demonstarate viability of the approach. Research itself is also available as a PDF as it appears in CAR-J.
 
 This flowchart outlines the methodology employed in our machine learning pipeline for CT image analysis. The process begins with a curated dataset of medical imaging scans, followed by preprocessing to standardize data formats and dimensions. The selection of image recognition techniques includes approaches like transfer learning, convolutional neural networks (CNNs), and additional methods, evaluated through preliminary testing. The chosen model and class undergo iterative training, optimized by hyperparameter tuning, and validated on a separate dataset to ensure generalizability. Finally, the selected model is tested on a holdout set for performance evaluation, completing the pipeline for accurate classification of imaging features such as body parts, imaging axes, and intravenous contrast.
+
 ![System Level Overview 1 Training Modules](Assets/System_Level_Overview-1-Training_Modules.png)
 
 This diagram illustrates the core functionality of the final design modules for DICOM data processing and machine learning classification. Users begin by selecting DICOM datasets, which undergo preprocessing to ensure uniformity and compatibility. The system then labels specific aspects of the DICOM files, such as the imaged body part, imaging axis, and reconstruction kernel, using dedicated machine learning models for each classification task. These outputs are consolidated into a final decision, with the results displayed for review or stored for future use, enabling streamlined integration into clinical workflows and data curation pipelines.
+
 ![System Level Overview 2 Final Design Specs](Assets/System_Level_Overview-2-Final_Design_Modules.png)
 
 Our approach uses the ResNet34 architecture, a 34-layer residual convolutional network that enhances image feature extraction by preserving gradients through shortcut connections. This configuration is well-suited for image classification tasks due to its ability to learn complex hierarchical representations without suffering from vanishing gradients.
 
 In our implementation, we employ a pre-trained ResNet34 model to leverage transfer learning on medical imaging data. We freeze the convolutional layers to retain learned feature extraction while customizing the fully connected layers to output predictions for our specific tasks: identifying body part, imaging axis, and kernel type. The model's performance is optimized through the addition of ReLU activations and dropout regularization to mitigate overfitting. Preliminary results indicate high accuracy and generalizability when tested on anonymized public health datasets.
+
 ![Resnet34 Demo](Assets/Resnet34_Demo.png)
 ![34-Layer Residual Scheme](Assets/34-Layer-Residual.png)
 
 This figure showcases the training and validation performance of our ResNet34-based model. Leveraging GPU acceleration, the training process achieved convergence within 10 epochs, taking approximately 1800 seconds using a subset of an open publicly available dataset.
 
 The top plot illustrates the loss curve over iterations, demonstrating consistent reduction and stability towards the end of training. The bottom plot depicts the training and validation accuracy curves, which steadily increase and approach convergence, achieving a final training accuracy of 95.83% and a validation accuracy of 92.5%. These results highlight the effectiveness and generalization capability of the model on the validation set.
+
 ![Demo Training Pass](Assets/Demo_Training_Pass.png)
 
 This diagram emphasizes the importance of proper data splitting to prevent contamination and ensure robust model evaluation. The original dataset is divided into training, validation, and testing subsets.
 
 The training set is used to fit the machine learning algorithm, while the validation set facilitates hyperparameter tuning and evaluation during development. The final model is assessed on the test set, ensuring unbiased performance evaluation. This systematic approach minimizes overfitting and allows the model to generalize effectively to unseen data.
+
 ![Dataset Splitting](Assets/Dataset_Splitting.png)
 
 This training curve confirms the consistency and reliability of our model's performance. The plot illustrates the progression of training and validation accuracy across 1000 iterations. Both curves steadily converge, demonstrating effective learning and minimal overfitting.
 
 The final training accuracy of 94.35% and validation accuracy of 93.20% indicate the model's strong capability to generalize, validating its robustness for the classification tasks. This balance reflects the careful tuning and appropriate dataset partitioning used in the training process.
+
 ![Verifying Accuracy](Assets/Verifying_Accuracy.png)
 
 
