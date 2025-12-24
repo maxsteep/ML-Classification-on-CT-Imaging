@@ -1,5 +1,7 @@
 # Machine Learning Classification of Body Part, Imaging Axis, and Intravenous Contrast Enhancement on CT Imaging
 
+https://pubmed.ncbi.nlm.nih.gov/37439250/
+
 ### Overview of the abstract as it appears in the Canadian Association of Radiologists Journal
 
 Developed and validated a suite of deep learning models using PyTorch for automated analysis of CT imaging data. This project, published in the Canadian Association of Radiologists Journal (CARJ) and the Radiological Society of North America (RSNA) Journal, focused on classifying three crucial aspects of CT series:
